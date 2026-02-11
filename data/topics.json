@@ -1,0 +1,29 @@
+{
+  "topics": [
+    {
+      "id": "KYC",
+      "label": "KYC / Onboarding",
+      "keywords": ["kyc", "onboarding", "verification", "documents", "identity"]
+    },
+    {
+      "id": "SIP",
+      "label": "SIP / Mandates",
+      "keywords": ["sip", "mandate", "systematic", "recurring", "auto-debit"]
+    },
+    {
+      "id": "STATEMENTS",
+      "label": "Statements / Tax Docs",
+      "keywords": ["statement", "tax", "form 16", "capital gains", "annual statement"]
+    },
+    {
+      "id": "WITHDRAWALS",
+      "label": "Withdrawals & Timelines",
+      "keywords": ["withdraw", "redeem", "timeline", "when will i get", "payout"]
+    },
+    {
+      "id": "ACCOUNT",
+      "label": "Account Changes / Nominee",
+      "keywords": ["change", "nominee", "bank details", "update", "modify account"]
+    }
+  ]
+}
