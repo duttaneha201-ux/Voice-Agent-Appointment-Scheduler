@@ -19,10 +19,31 @@ From repo root:
 
 ```bash
 pip install -r requirements.txt
-cp .env.example .env
+cp env.example .env
 # Edit .env and set GROQ_API_KEY
 streamlit run src/routes/app.py
 ```
+
+## Deploy on Streamlit Community Cloud
+
+1. **Push this repo to GitHub** (if not already).
+
+2. **Go to [share.streamlit.io](https://share.streamlit.io)** and sign in with GitHub.
+
+3. **New app** → choose repo `Voice-Agent-Appointment-Scheduler`, branch `main`, **Main file path:** `src/routes/app.py` → Deploy.
+
+4. **Secrets** (in the app’s **Settings** → **Secrets**): add at least:
+   - `GROQ_API_KEY` = your Groq API key  
+   Optional (for Calendar/Sheets):
+   - `GOOGLE_SERVICE_ACCOUNT_KEY_PATH` = path not used on Cloud; instead paste the **entire JSON key** as a secret named `GOOGLE_SERVICE_ACCOUNT_KEY` (value = contents of the `.json` file).
+   - `GOOGLE_CALENDAR_ID`, `GOOGLE_SHEET_ID`, `GMAIL_USER`, `TIMEZONE`, `BASE_URL` as needed.
+
+   Example (minimal):
+   ```toml
+   GROQ_API_KEY = "your-groq-api-key"
+   ```
+
+5. The app will build and run; the URL will be `https://<your-app>.streamlit.app`.
 
 ## Testing
 

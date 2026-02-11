@@ -24,4 +24,5 @@ build/
 *.egg-info/
 
 .streamlit/
+!.streamlit/config.toml
 .pytest_cache/
